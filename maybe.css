@@ -1,0 +1,505 @@
+body {
+	height: auto;
+	overflow-x: hidden;
+}
+
+/*The Little Reused Thing(s)*/
+
+.divider {
+	height: 32px;
+	background-color: whitesmoke;
+}
+
+#helpwith, #myportfolio, #myblog, #getintouch {
+	padding: 50px 0px;
+}
+
+.fa {
+	color: #ff3333;
+	text-shadow: 0px 0px 3px black;
+}
+
+/*Nav Header*/
+
+#topnav {
+	width: 100vw;
+	background: rgba(255, 255, 255, 0);
+	/*border-bottom: 1px solid white;*/
+	box-shadow: 0px 0px 3px 1px #262626;
+	transition: background 1s, box-shadow 1s, border-bottom 0.5s;
+}
+
+.tnopacity {
+	background: rgba(255, 255, 255, 1) !important;
+}
+
+/*My Name*/
+
+#myname {
+	font-size: 36px;
+	font-family: "Roboto", sans-serif, "Arial";
+	font-weight: 200;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	transition: color 0.5s, text-shadow 0.5s;
+}
+
+.mnscrolltop {
+	color: #333 !important;
+	text-shadow: 0px 0px 0px black !important;
+}
+
+/*Right Side Nav/Collapse Nav*/
+
+#rightsidenav {
+	margin-right: 13px;
+}
+
+#rightsidenav a {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif, "Arial";
+	font-weight: 300;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 0px black;
+	transition: color 0.5s, text-shadow 0.5s;
+	cursor: pointer;
+}
+
+.rsnascrolltop {
+	color: #333 !important;
+	text-shadow: 0px 0px 0px black !important;
+}
+
+/*HOVARS*/
+
+#myname:hover, #rightsidenav a:hover {
+	color: #ff3333 !important;
+	text-shadow: 0px 0px 1px black !important;
+}
+
+/*Header & Header Welcome Content*/
+
+header {
+	height: 100vh;
+	width: 100%;
+	background:
+		linear-gradient(
+			rgba(0, 0, 0, 0.55),
+			rgba(0, 0, 0, 0.55)
+		),	url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/Q5F4Y33RNK.jpg");
+	
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+}
+
+#welcome {
+	color: white;
+	font-size: 100px;
+	font-family: "Roboto", sans-serif, "Arial";
+	font-weight: 300;
+	text-shadow: 0px 0px 6px black;
+	align-self: center;
+	transition: font-size 1s;
+}
+
+#welcomehr {
+	border: 1px solid #ff3333;
+	box-shadow: 0px 0px 3px 1px black;
+	width: auto;
+}
+
+#frontend {
+	color: white;
+	font-family: "Roboto", sans-serif, "Arial";
+	font-size: 48px;
+	font-weight: 200;
+	text-shadow: 0px 0px 3px black;
+	transition: font-size 1s;
+}
+
+/*Who Am I?*/
+
+#whoami {
+	height: auto;
+	background-color: #262626;
+	color: white;
+	font-family: "Roboto", sans-serif, "Arial";
+	text-shadow: 0px 0px 3px black;
+	padding-top: 50px;
+	box-shadow: inset 0px 0px 3px black;
+}
+
+
+/*About Me Header*/
+
+#whoamiheader h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin: 0px 0px;
+}
+
+#whoami hr {
+	border: 2px solid #ff3333;
+	width: 240px;
+	box-shadow: 0px 0px 1px black;
+}
+
+/*About Me Content*/
+
+#whoami p {
+	font-weight: 300;
+	font-size: 22px;
+	text-align: justify;
+	margin: 5px 0px;
+}
+
+#readmore {
+	display: none;
+}
+
+#readmore p {
+	margin: 5px 0px;
+}
+
+/*ReadMore button*/
+#readmoreaboutme {
+	background-color: white; /*#004466;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#remo {
+	height: 48px;
+	width: 300px;
+	border: 2px solid red;
+	border-radius: 10px;
+	background-color: #1a1a1a;
+	font-family: "Roboto Bold", sans-serif, "Arial";
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#remo a {
+	font-family: "Roboto Bold", sans-serif, "Arial";
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px black;
+}
+
+/*HelpWith*/
+
+#helpwith {
+	align-items: center;
+	color: #333;
+	font-family: "Roboto", sans-serif, "Arial";
+}
+
+#headerhelp {
+	margin: 0;
+}
+
+#helpwith hr {
+	border: 2px solid #262626;
+	box-shadow: 0px 0px 1px black;
+	width: 240px;
+}
+
+#thesearethehelp {
+	font-family: "Roboto", sans-serif, "Arial";
+	font-weight: 300;
+	font-size: 40px;
+	margin: 5px 0px;
+}
+
+/*Content of Help With Apart From Header*/
+
+#helpwithcontent h3 {
+	font-weight: 500;
+}
+
+#helpwithcontent p {
+	font-size: 20px;
+	text-align: justify;
+}
+
+#lthelp {
+	height: auto;
+	margin: 10px 0px;
+	/*box-shadow: 0px 0px 1px black;*/
+}
+
+#lthelp span {
+	margin-top: 10px;
+}
+
+#rthelp {
+	height: auto;
+	margin: 10px 0px;
+	/*box-shadow: 0px 0px 1px black;*/
+}
+
+#rthelp span {
+	margin-top: 10px;
+}
+
+#lbhelp {
+	height: auto;
+	margin: 10px 0px;
+	/*box-shadow: 0px 0px 1px black;*/
+}
+
+#lbhelp span {
+	margin-top: 10px;
+}
+
+#rbhelp {
+	height: auto;
+	margin: 10px 0px;
+	/*box-shadow: 0px 0px 1px black;*/
+}
+
+#rbhelp span {
+	margin-top: 10px;
+}
+
+/*Portfolio*/
+
+#myportfolio {
+	color: #333;
+	font-family: "Roboto", sans-serif, "Arial";
+	align-items: center;
+}
+
+#myportfolio .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#portheader {
+	font-weight: 300 !important;
+	font-size: 40px !important;
+	margin: 5px 0px;
+}
+
+#myportfolio hr {
+	border: 2px solid #262626;
+	width: 240px;
+	box-shadow: 0px 0px 1px black;
+}
+
+#portdisplay {
+	height: auto;
+	margin: 64px;
+}
+
+.portitems {
+	height: 320px;
+	text-align: center;
+	background-size: 100% 100% !important;
+}
+
+#oneport {
+	background-image: url("fbfrontpage.jpg");
+}
+
+#twoport {
+	background-image: url("tlpv2.png");
+}
+
+.textholder {
+	height: 320px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.textholder h1 {
+	font-weight: 400;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+.textholder p {
+	font-weight: 300;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+
+/*Blog*/
+
+#myblog .row {
+	margin: 0;
+}
+
+#myblog h1 {
+	font-family: "Roboto", sans-serif, "Arial";
+	font-weight: 300;
+	font-size: 40px;
+	margin: 5px 0px;
+}
+
+#myblog p {
+	font-family: "Roboto", sans-serif, "Arial";
+	font-size: 16px;
+	margin: 5px 0px;
+}
+
+#myblog hr {
+	border: 2px solid #262626;
+	width: 240px;
+	box-shadow: 0px 0px 1px black;
+}
+
+/*Contact Me*/
+
+#getintouch {
+	color: white;
+	text-shadow: 0px 0px 2px black;
+	background-color: #ff3333;
+	font-family: "Roboto", sans-serif, "Arial";
+}
+
+#getintouch .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#getintouch h1 {
+	font-weight: 300;
+}
+
+#getintouch h4 {
+	font-weight: 300;
+}
+
+#getintouch hr {
+	border: 2px solid #262626;
+	width: 240px;
+	box-shadow: 0px 0px 1px black;
+}
+
+#getintouch button {
+	width: 120px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color: #1a1a1a;
+	font-family: "Roboto Bold", sans-serif, "Arial";
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 3px black;
+}
+
+#getintouch .fa {
+	color: #262626;
+	text-shadow: 0px 0px 1px black;
+}
+
+#myemail {
+	margin-top: 9px;
+}
+
+/*Footer*/
+footer {
+	background-color: #262626;
+}
+
+footer h2 {
+	font-family: cursive, "Roboto", sans-serif, "Arial";
+	font-weight: 300;
+	color: white;
+	font-style: italic;
+}
+
+/*Media Queries*/
+
+/*994px and smaller*/
+
+@media screen and (max-width: 994px) {
+	#rightsidenav a {
+		font-size: 13px
+	}
+	
+	#welcome {
+		font-size: 80px;
+	}
+}
+
+/*850px and smaller*/
+
+@media screen and (max-width: 850px) {
+	#rightsidenav a {
+		font-size: 10.5px;
+	}
+}
+
+/*767px and smaller*/
+
+@media screen and (max-width: 768px) {
+	#welcome {
+		font-size: 60px;
+	}
+	
+	#frontend {
+		font-size: 36px;
+	}
+	
+	#thanks h1 {
+		font-size: 24px;
+	}
+	
+	#remo {
+		width: 210px;
+	}
+}
+
+/*510px and smaller*/
+
+@media screen and (max-width: 530px) {
+	.textholder {
+		height: auto;
+	}
+	
+	.textholder h1 {
+		font-size: 30px;
+	}
+	
+	.textholder p {
+		font-size: 24px;
+	}
+	
+}
+
+/*480px and smaller*/
+
+@media screen and (max-width: 480px) {
+	#welcome {
+		font-size: 50px;
+	}
+	
+	#whoami hr {
+		width: 180px;
+	}
+}
+
+/*320px and smaller*/
+
+@media screen and (max-width: 320px) {
+	#welcome {
+		font-size: 40px;
+	}
+	
+}
